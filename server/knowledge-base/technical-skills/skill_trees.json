@@ -1,0 +1,8 @@
+{
+  "categories": {
+    "languages": ["JavaScript", "TypeScript", "Python", "Java", "C++", "Go", "SQL", "HTML5", "CSS3"],
+    "frameworks": ["React", "Express.js", "Spring Boot", "Next.js", "Django", "FastAPI", "Node.js", "Tailwind CSS"],
+    "databases": ["MongoDB", "PostgreSQL", "MySQL", "Redis", "Elasticsearch", "ChromaDB", "Pinecone"],
+    "tools": ["Git", "Docker", "Kubernetes", "AWS", "Vite", "Webpack", "Postman", "Jest", "GitHub Actions"]
+  }
+}

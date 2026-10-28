@@ -1,0 +1,30 @@
+{
+  "name": "ai-resume-career-assistant",
+  "version": "1.0.0",
+  "description": "Full-stack AI-Powered Resume & Career Assistant platform with LLM, RAG, and CAG architecture.",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "nodemon server/server.js",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && npm install --prefix client && npm install --prefix server"
+  },
+  "keywords": [
+    "mern",
+    "ai",
+    "llm",
+    "rag",
+    "cag",
+    "resume-builder",
+    "ats-score",
+    "career-assistant",
+    "portfolio-generator"
+  ],
+  "author": "Antigravity",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.14"
+  }
+}

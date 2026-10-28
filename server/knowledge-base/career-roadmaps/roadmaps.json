@@ -1,0 +1,14 @@
+{
+  "Full Stack Developer": [
+    { "step": 1, "phase": "Foundations", "title": "Core JavaScript & Modern Web", "topics": ["ES6+ syntax", "Promises & Async/Await", "DOM & Fetch API", "HTML5 & CSS Flexbox/Grid"] },
+    { "step": 2, "phase": "Frontend Mastery", "title": "React & UI Architecture", "topics": ["React Hooks", "State Management (Context/Redux)", "Tailwind CSS", "React Router", "Vite"] },
+    { "step": 3, "phase": "Backend & Database", "title": "Node.js, Express & Databases", "topics": ["Express REST APIs", "JWT Auth & Security", "MongoDB & Mongoose Schema Design", "SQL Fundamentals"] },
+    { "step": 4, "phase": "Advanced & AI Integration", "title": "DevOps, RAG & LLMs", "topics": ["Docker containers", "AWS/Vercel deployment", "LLM API integration", "Vector embeddings & RAG"] }
+  ],
+  "Java Developer": [
+    { "step": 1, "phase": "Core Java", "title": "OOP & Java Syntax", "topics": ["Core Java 17/21", "Collections Framework", "Streams API", "Multithreading & Concurrency"] },
+    { "step": 2, "phase": "Framework", "title": "Spring Boot Ecosystem", "topics": ["Spring Boot", "Spring Data JPA & Hibernate", "Spring Security & JWT", "RESTful Web Services"] },
+    { "step": 3, "phase": "Databases & Architecture", "title": "Enterprise DB & Microservices", "topics": ["PostgreSQL/MySQL tuning", "Redis Caching", "Microservices architecture", "Kafka Messaging"] },
+    { "step": 4, "phase": "Production Readiness", "title": "Testing & Deployment", "topics": ["JUnit 5 & Mockito", "Docker", "CI/CD Pipelines", "Maven/Gradle builds"] }
+  ]
+}

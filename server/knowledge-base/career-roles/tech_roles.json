@@ -1,0 +1,68 @@
+[
+  {
+    "id": "full-stack-developer",
+    "role": "Full Stack Developer",
+    "category": "Software Engineering",
+    "description": "Develops both client and server software using web technologies, databases, and APIs.",
+    "requiredSkills": ["JavaScript", "TypeScript", "React", "Node.js", "Express.js", "MongoDB", "SQL", "REST API", "Git"],
+    "recommendedSkills": ["Docker", "AWS", "Tailwind CSS", "Redux", "GraphQL", "CI/CD", "Jest"],
+    "avgSalary": "$110,000 - $160,000",
+    "demandLevel": "High",
+    "suitableFor": ["JavaScript", "React", "Node.js", "MongoDB", "SQL", "Python", "Full Stack"]
+  },
+  {
+    "id": "java-developer",
+    "role": "Java Developer",
+    "category": "Backend Engineering",
+    "description": "Builds robust enterprise backends, microservices, and web APIs using Java and Spring ecosystem.",
+    "requiredSkills": ["Java", "Spring Boot", "Spring MVC", "SQL", "REST API", "Git", "Maven"],
+    "recommendedSkills": ["Docker", "AWS", "Microservices", "Kafka", "Hibernate / JPA", "JUnit", "Redis"],
+    "avgSalary": "$105,000 - $150,000",
+    "demandLevel": "Very High",
+    "suitableFor": ["Java", "Spring", "SQL", "REST API", "Backend", "Object-Oriented Programming"]
+  },
+  {
+    "id": "backend-developer",
+    "role": "Backend Developer",
+    "category": "Backend Engineering",
+    "description": "Architects high-performance API services, backend logic, data pipelines, and database schemas.",
+    "requiredSkills": ["Node.js", "Express.js", "Python", "Java", "SQL", "PostgreSQL", "MongoDB", "REST API", "Git"],
+    "recommendedSkills": ["Docker", "Redis", "Kafka", "GraphQL", "Kubernetes", "Microservices", "AWS"],
+    "avgSalary": "$115,000 - $155,000",
+    "demandLevel": "High",
+    "suitableFor": ["Node.js", "Python", "Java", "SQL", "Databases", "APIs"]
+  },
+  {
+    "id": "frontend-developer",
+    "role": "Frontend Developer",
+    "category": "Web Development",
+    "description": "Crafts interactive, accessible, responsive user interfaces and client-side web applications.",
+    "requiredSkills": ["JavaScript", "React.js", "HTML5", "CSS3", "Tailwind CSS", "TypeScript", "Git"],
+    "recommendedSkills": ["Next.js", "Redux Toolkit", "Framer Motion", "Vite", "Webpack", "Web Accessibility (a11y)"],
+    "avgSalary": "$95,000 - $140,000",
+    "demandLevel": "High",
+    "suitableFor": ["JavaScript", "React", "HTML", "CSS", "UI/UX", "Tailwind"]
+  },
+  {
+    "id": "ai-ml-engineer",
+    "role": "AI / Machine Learning Engineer",
+    "category": "Artificial Intelligence",
+    "description": "Builds and deploys machine learning models, RAG pipelines, LLM fine-tuning, and intelligent automation systems.",
+    "requiredSkills": ["Python", "PyTorch", "TensorFlow", "Scikit-Learn", "RAG", "LangChain", "Vector Databases", "Git"],
+    "recommendedSkills": ["FastAPI", "Docker", "HuggingFace", "MLOps", "Fine-Tuning", "Cloud AI APIs (Gemini/OpenAI)"],
+    "avgSalary": "$130,000 - $185,000",
+    "demandLevel": "Extremely High",
+    "suitableFor": ["Python", "AI", "Machine Learning", "Data Science", "LLM", "RAG", "PyTorch"]
+  },
+  {
+    "id": "devops-engineer",
+    "role": "DevOps / Cloud Engineer",
+    "category": "Infrastructure",
+    "description": "Automates cloud deployment pipelines, container orchestration, monitoring, and infrastructure security.",
+    "requiredSkills": ["Linux", "Docker", "Kubernetes", "AWS", "Terraform", "CI/CD (GitHub Actions/Jenkins)", "Bash/Shell"],
+    "recommendedSkills": ["Prometheus", "Grafana", "Ansible", "Python", "GCP", "Cloud Security"],
+    "avgSalary": "$120,000 - $165,000",
+    "demandLevel": "Very High",
+    "suitableFor": ["Cloud", "AWS", "Linux", "Docker", "Kubernetes", "DevOps", "CI/CD"]
+  }
+]

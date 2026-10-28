@@ -1,0 +1,16 @@
+[
+  {
+    "role": "Java Developer",
+    "requiredSkills": ["Java", "Spring Boot", "SQL", "REST API", "Git", "Maven"],
+    "recommendedSkills": ["Docker", "AWS", "React", "Microservices", "JUnit", "Kafka"],
+    "experienceLevels": ["Junior (0-2 yrs)", "Mid-level (3-5 yrs)", "Senior (5+ yrs)"],
+    "commonKeywords": ["Spring Boot", "RESTful API", "Microservices", "OOP", "Relational Database", "JUnit", "CI/CD"]
+  },
+  {
+    "role": "Full Stack Developer",
+    "requiredSkills": ["JavaScript", "React", "Node.js", "Express.js", "MongoDB", "REST API", "Git"],
+    "recommendedSkills": ["TypeScript", "Tailwind CSS", "Docker", "AWS", "GraphQL", "Redux"],
+    "experienceLevels": ["Entry Level (0-2 yrs)", "Full Stack Engineer (2-5 yrs)", "Lead Full Stack (5+ yrs)"],
+    "commonKeywords": ["Full Stack", "MERN", "React.js", "Node.js", "RESTful Web Services", "NoSQL", "Single Page App"]
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "category": "ats-guidelines",
+  "title": "ATS Optimization & Scoring Guidelines",
+  "rules": [
+    {
+      "rule": "Formatting & Parsability",
+      "guideline": "Use standard section headers like 'Summary', 'Work Experience', 'Education', 'Skills', and 'Projects'. Avoid tables, multi-column text boxes, images, or custom graphics that break ATS parsers.",
+      "weight": 20
+    },
+    {
+      "rule": "Keyword Alignment",
+      "guideline": "Incorporate exact keywords from the job description. If a job calls for 'React.js' or 'REST APIs', use those exact terms in experience bullets and skills lists.",
+      "weight": 25
+    },
+    {
+      "rule": "Action-Oriented Bullet Points",
+      "guideline": "Start experience bullets with strong action verbs (e.g., Developed, Engineered, Optimized, Architected) followed by clear metrics and outcomes (e.g., reduced load times by 40%).",
+      "weight": 20
+    },
+    {
+      "rule": "Contact & Personal Information",
+      "guideline": "Include clear Email, Phone Number, Location (City, State/Country), LinkedIn profile URL, GitHub URL, and Portfolio website link.",
+      "weight": 15
+    },
+    {
+      "rule": "File Format & Structure",
+      "guideline": "Submit clean text-selectable PDF or DOCX files. Avoid scanned PDFs or image-only documents.",
+      "weight": 20
+    }
+  ],
+  "scoringRubric": {
+    "excellent": "90-100: Highly tailored, strong action verbs, quantifiable achievements, zero parsing issues.",
+    "good": "75-89: Solid keyword alignment, clear structure, minor missing skills or generic descriptions.",
+    "needsImprovement": "60-74: Missing crucial tech keywords, weak impact metrics, non-standard headings.",
+    "poor": "0-59: Poor formatting, missing key sections, no metric highlights."
+  }
+}

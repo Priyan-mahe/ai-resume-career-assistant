@@ -1,0 +1,22 @@
+{
+  "category": "resume-guidelines",
+  "title": "Resume Writing Best Practices & Formulas",
+  "formulas": [
+    {
+      "name": "Google XYZ Formula for Impact Bullets",
+      "formula": "Accomplished [X] as measured by [Y], by doing [Z].",
+      "example": "Increased API throughput by 45% (Y) by refactoring MongoDB query indexes and caching hot endpoints with Redis (Z), reducing user latency (X)."
+    },
+    {
+      "name": "CAR Formula (Context, Action, Result)",
+      "formula": "[Context / Problem] -> [Action Taken] -> [Measurable Result]",
+      "example": "Facing high frontend re-render delays in legacy React app, re-architected global state using Redux Toolkit and implemented virtualized lists, cutting page load time by 60%."
+    }
+  ],
+  "sectionAdvice": {
+    "summary": "Keep it to 2-3 sentences max. State title, years of experience/level, key tech stack, and primary value proposition.",
+    "skills": "Group skills logically into categories: Programming Languages, Frameworks & Libraries, Databases, Cloud & DevOps, Tools & Methods.",
+    "experience": "3-5 bullet points per role. Every bullet MUST start with an impactful past-tense action verb (e.g., Engineed, Architected, Designed, Implemented, Spearheaded).",
+    "projects": "Highlight problem statement, tech stack used, your exact role, and live demo / GitHub link."
+  }
+}

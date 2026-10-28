@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Career Assistant | ATS Resumes, RAG Guidance & Interview Prep</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      // If opened via VS Code Live Server (port 5500) or static file preview,
+      // redirect seamlessly to the built production bundle in ./dist/index.html
+      (function() {
+        if (typeof window !== 'undefined') {
+          var isLiveServer = window.location.port === '5500' || window.location.protocol === 'file:';
+          var isClientSource = window.location.pathname.indexOf('/dist/') === -1 && 
+            (window.location.pathname.endsWith('/client/index.html') || window.location.pathname.endsWith('/client/'));
+          if (isLiveServer && isClientSource) {
+            var target = window.location.pathname.replace(/\/client(\/index\.html)?\/?$/, '/client/dist/index.html');
+            window.location.replace(target + window.location.hash);
+          }
+        }
+      })();
+    </script>
+    <style>
+      /* Fallback / pre-mount styles to ensure no white screen */
+      body {
+        margin: 0;
+        background-color: #020617;
+        color: #f8fafc;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      }
+      .pre-loader-container {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1.5rem;
+        text-align: center;
+      }
+      .pre-loader-card {
+        background: rgba(15, 23, 42, 0.85);
+        border: 1px solid rgba(99, 102, 241, 0.25);
+        box-shadow: 0 0 35px -5px rgba(99, 102, 241, 0.2);
+        border-radius: 1.25rem;
+        padding: 2rem;
+        max-width: 28rem;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .pre-loader-spinner {
+        width: 3.5rem;
+        height: 3.5rem;
+        border: 3px solid rgba(99, 102, 241, 0.2);
+        border-top-color: #6366f1;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin: 0 auto 1.25rem auto;
+      }
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+      .btn-action {
+        display: inline-block;
+        padding: 0.65rem 1.25rem;
+        background: linear-gradient(135deg, #4f46e5, #06b6d4);
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 0.825rem;
+        border-radius: 0.75rem;
+        text-decoration: none;
+        margin: 0.4rem;
+        transition: transform 0.15s ease;
+      }
+      .btn-action:hover {
+        transform: translateY(-1px);
+      }
+      .btn-secondary {
+        background: #1e293b;
+        border: 1px solid #334155;
+        color: #cbd5e1;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased font-sans selection:bg-brand-500 selection:text-white min-h-screen">
+    <div id="root">
+      <div class="pre-loader-container">
+        <div class="pre-loader-card">
+          <div class="pre-loader-spinner"></div>
+          <h2 style="font-size: 1.25rem; font-weight: 700; margin: 0 0 0.5rem 0; color: #ffffff;">
+            CareerAI Assistant
+          </h2>
+          <p style="font-size: 0.825rem; color: #94a3b8; margin: 0 0 1.25rem 0; line-height: 1.4;">
+            Loading modern MERN + RAG + CAG career platform...
+          </p>
+
+          <div id="fallback-instructions" style="display: none; border-top: 1px solid #1e293b; padding-top: 1rem; margin-top: 1rem;">
+            <p style="font-size: 0.75rem; color: #cbd5e1; margin-bottom: 0.75rem; text-align: left;">
+              If the page does not load automatically, open the active application directly:
+            </p>
+            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+              <a href="http://localhost:5173" class="btn-action">Open Vite Dev Server (Port 5173)</a>
+              <a href="http://localhost:5000" class="btn-action btn-secondary">Open Express Full-Stack (Port 5000)</a>
+            </div>
+            <p style="font-size: 0.7rem; color: #64748b; margin-top: 0.75rem;">
+              Commands: <code>npm run dev</code> in client &middot; <code>npm start</code> in server
+            </p>
+          </div>
+        </div>
+      </div>
+      <script>
+        // Display launch instructions if React hasn't mounted after 2.5 seconds
+        setTimeout(function() {
+          var fb = document.getElementById('fallback-instructions');
+          if (fb) fb.style.display = 'block';
+        }, 2500);
+      </script>
+    </div>
+    <script type="module" src="./src/main.jsx"></script>
+  </body>
+</html>

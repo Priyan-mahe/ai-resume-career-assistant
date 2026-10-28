@@ -1,0 +1,40 @@
+[
+  {
+    "role": "Full Stack Developer",
+    "technical": [
+      {
+        "question": "How does the Node.js event loop handle asynchronous non-blocking I/O operations?",
+        "answerKey": "Explain the call stack, Node API bindings, event queue (microtasks & macrotasks), libuv thread pool, and phases (timers, I/O callbacks, idle/prepare, poll, check, close callbacks)."
+      },
+      {
+        "question": "What is the difference between Virtual DOM and Real DOM in React, and how does Reconciliation work?",
+        "answerKey": "Virtual DOM is a lightweight in-memory JSON copy of Real DOM. Reconciliation diffs virtual trees using the Fiber architecture to batch updates and minimize DOM reflows."
+      }
+    ],
+    "behavioral": [
+      {
+        "question": "Tell me about a time you had to optimize a slow web page or API response.",
+        "answerKey": "Use STAR method (Situation, Task, Action, Result). Mention profiling tools (Lighthouse, Chrome DevTools, APM), indexing, caching, memoization, and quantifiable impact metrics."
+      }
+    ]
+  },
+  {
+    "role": "Java Developer",
+    "technical": [
+      {
+        "question": "Explain Java Garbage Collection and memory management (Heap, Stack, Metaspace, Young/Old Generation).",
+        "answerKey": "Stack holds primitive local vars and object references per thread. Heap stores objects divided into Eden, Survivor 0/1, and Tenured spaces. Metaspace stores class metadata."
+      },
+      {
+        "question": "How does Spring Boot dependency injection and `@Autowired` work under the hood?",
+        "answerKey": "Spring IoC container scans classes annotated with `@Component`/`@Service`/`@Repository`, creates singleton bean definitions in ApplicationContext, and injects dependencies via constructor or field reflection."
+      }
+    ],
+    "behavioral": [
+      {
+        "question": "How do you handle microservices breaking changes or API backwards compatibility?",
+        "answerKey": "Use API versioning (/v1, /v2), consumer-driven contracts, graceful deprecation flags, and database migration scripts (Flyway/Liquibase)."
+      }
+    ]
+  }
+]
