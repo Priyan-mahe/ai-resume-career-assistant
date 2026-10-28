@@ -14,7 +14,8 @@ const generateCoverLetter = async (req, res) => {
       });
     }
 
-    const { jobTitle, company, jobDescription, resumeText, tone = 'Professional' } = req.body;
+    const { jobTitle, jobDescription, resumeText, tone = 'Professional' } = req.body;
+    const company = req.body.company || req.body.companyName || '';
     const userId = req.user._id;
 
     if (!jobTitle || !company) {

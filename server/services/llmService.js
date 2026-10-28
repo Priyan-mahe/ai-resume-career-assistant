@@ -9,8 +9,9 @@ class LLMService {
   constructor() {
     this.apiKey = process.env.LLM_API_KEY || '';
     this.provider = process.env.LLM_PROVIDER || (this.apiKey ? 'gemini' : 'ollama');
-    this.ollamaUrl = process.env.OLLAMA_URL || 'http://localhost:11434';
+    this.ollamaUrl = process.env.OLLAMA_URL || process.env.OLLAMA_BASE_URL || 'http://localhost:11434';
     this.ollamaModel = process.env.OLLAMA_MODEL || 'llama3.2:3b';
+    this.model = process.env.LLM_MODEL || (this.provider === 'gemini' ? 'gemini-1.5-flash' : 'gpt-4o-mini');
   }
 
   isConfigured() {

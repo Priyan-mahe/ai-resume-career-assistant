@@ -306,7 +306,8 @@ const generateAISummary = async (req, res) => {
 // @route POST /api/resumes/improve-experience
 const improveExperienceBullets = async (req, res) => {
   try {
-    const { role, company, responsibility } = req.body;
+    const { role = 'Software Engineer', company = 'Technology Company' } = req.body;
+    const responsibility = req.body.responsibility || req.body.text || req.body.bulletPoint || '';
     const prompt = `Rewrite and improve the following work experience bullet point for a ${role} at ${company}. Make it action-oriented, start with a strong past-tense verb, and include quantifiable impact metrics:
 """
 ${responsibility}
@@ -318,8 +319,16 @@ ${responsibility}
       jsonMode: true
     });
 
+    const bullets = Array.isArray(result?.bulletPoints)
+      ? result.bulletPoints
+      : (Array.isArray(result?.improvedBullets)
+        ? result.improvedBullets
+        : [typeof result === 'string' ? result : (responsibility || "Engineered scalable features delivering high impact.")]);
+
     return res.json({
-      improvedBullets: Array.isArray(result?.bulletPoints) ? result.bulletPoints : [typeof result === 'string' ? result : responsibility]
+      improvedBullets: bullets,
+      bulletPoints: bullets,
+      improvedText: bullets[0]
     });
   } catch (error) {
     return res.status(500).json({ message: 'Failed to improve experience bullets' });

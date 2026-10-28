@@ -86,21 +86,24 @@ app.use((err, req, res, next) => {
   });
 });
 
-const PORT = process.env.PORT || 5000;
-
-const server = app.listen(PORT, () => {
-  console.log(`=======================================================`);
-  console.log(`🚀 AI Career Assistant Backend Server Running on Port ${PORT}`);
-  console.log(`🌐 Health check: http://localhost:${PORT}/api/health`);
-  console.log(`🌐 Serving frontend from: ${fs.existsSync(distPath) ? distPath : 'Not built yet (run npm run build in client)'}`);
-  console.log(`=======================================================`);
-});
-
-process.on('SIGTERM', () => {
-  console.log('Received SIGTERM, shutting down gracefully...');
-  server.close(() => {
-    process.exit(0);
+let server = null;
+if (require.main === module) {
+  const PORT = process.env.PORT || 5000;
+  server = app.listen(PORT, () => {
+    console.log(`=======================================================`);
+    console.log(`🚀 AI Career Assistant Backend Server Running on Port ${PORT}`);
+    console.log(`🌐 Health check: http://localhost:${PORT}/api/health`);
+    console.log(`🌐 Serving frontend from: ${fs.existsSync(distPath) ? distPath : 'Not built yet (run npm run build in client)'}`);
+    console.log(`=======================================================`);
   });
-});
 
-module.exports = { app, server };
+  process.on('SIGTERM', () => {
+    console.log('Received SIGTERM, shutting down gracefully...');
+    server.close(() => {
+      process.exit(0);
+    });
+  });
+}
+
+app.server = server;
+module.exports = app;

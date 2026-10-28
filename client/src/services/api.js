@@ -6,8 +6,8 @@ const getBaseURL = () => {
       return import.meta.env.VITE_API_BASE_URL;
     }
     const { port, hostname } = window.location;
-    // On port 5173 (Vite proxy) or 5000 (Express server), relative /api works directly
-    if (port === '5173' || port === '5000') {
+    // When port is empty (production HTTPS/HTTP like Vercel) or 5173 (Vite proxy) or 5000 (Express local), use relative /api
+    if (!port || port === '5173' || port === '5000') {
       return '/api';
     }
     // On Live Server (port 5500) or other static origins, route to Express server

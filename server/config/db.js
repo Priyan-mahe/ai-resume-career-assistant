@@ -48,6 +48,12 @@ const validateUriFormat = (uri) => {
 };
 
 const connectDB = async () => {
+  if (mongoose.connection.readyState === 1) {
+    isConnected = true;
+    activeDatabaseHost = mongoose.connection.host;
+    return mongoose.connection;
+  }
+
   // Read MONGODB_URI (falling back to MONGO_URI if set)
   const rawUri = process.env.MONGODB_URI || process.env.MONGO_URI || '';
   const validation = validateUriFormat(rawUri);
