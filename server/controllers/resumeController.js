@@ -84,16 +84,20 @@ const getDefaultDemoResume = (userOrId) => {
 
 const findResumeByIdOrUser = async (resumeId, userId) => {
   if (getIsConnected()) {
-    try {
-      if (resumeId) {
+    if (resumeId && mongoose.Types.ObjectId.isValid(resumeId)) {
+      try {
         const found = await Resume.findById(resumeId);
         if (found) return found;
-      }
-      if (userId) {
-        const found = await Resume.findOne({ userId }).sort({ updatedAt: -1 });
-        if (found) return found;
-      }
-    } catch (e) {}
+      } catch (e) {}
+    }
+    if (userId) {
+      try {
+        if (mongoose.Types.ObjectId.isValid(userId)) {
+          const found = await Resume.findOne({ userId }).sort({ updatedAt: -1 });
+          if (found) return found;
+        }
+      } catch (e) {}
+    }
   }
   return null;
 };

@@ -7,6 +7,10 @@ const portfolioSchema = new mongoose.Schema(
       ref: 'User',
       required: true,
     },
+    name: {
+      type: String,
+      default: '',
+    },
     username: {
       type: String,
       required: true,
@@ -27,7 +31,9 @@ const portfolioSchema = new mongoose.Schema(
       darkMode: { type: Boolean, default: true },
     },
     content: {
+      name: String,
       hero: {
+        name: String,
         headline: String,
         subheadline: String,
         ctaText: String,
@@ -70,6 +76,8 @@ const portfolioSchema = new mongoose.Schema(
       ],
       contact: {
         email: String,
+        phone: String,
+        location: String,
         linkedin: String,
         github: String,
       },

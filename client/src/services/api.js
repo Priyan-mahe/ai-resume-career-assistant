@@ -63,6 +63,7 @@ export const generateCoverLetterApi = (data) => API.post('/cover-letter/generate
 export const getCoverLettersApi = () => API.get('/cover-letter');
 
 // Portfolio Services
+export const getUserPortfolioApi = () => API.get('/portfolio/me/current');
 export const createPortfolioApi = (data) => API.post('/portfolio', data);
 export const getPublicPortfolioApi = (username) => API.get(`/portfolio/${username}`);
 
