@@ -1,3 +1,4 @@
+const mongoose = require('mongoose');
 const Portfolio = require('../models/Portfolio');
 const Resume = require('../models/Resume');
 const User = require('../models/User');

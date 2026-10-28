@@ -1,3 +1,4 @@
+const mongoose = require('mongoose');
 const Resume = require('../models/Resume');
 const { getIsConnected } = require('../config/db');
 const atsService = require('../services/atsService');
